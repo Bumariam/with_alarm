@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BodyBoost"
         tools:targetApi="31">
         <activity
+            android:name=".RegFormActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
