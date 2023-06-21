@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
         String password= etPassword.getText().toString();
 
         if (name.isEmpty() || email.isEmpty() || password.isEmpty()){
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please fill all fields.", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -75,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
-                                            showRegFormActivity();
+                                            showLoginActivity();
                                         }
                                     });
 
@@ -87,8 +87,8 @@ public class RegisterActivity extends AppCompatActivity {
                 });
     }
 // open the activity with question
-    private void showRegFormActivity(){
-        Intent intent = new Intent(this, RegFormActivity.class);
+    private void showLoginActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }

@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            showHomeActivity();
+                            showMainActivity();
                         } else {
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_LONG).show();
@@ -74,8 +74,8 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
-    private void showHomeActivity(){
-        Intent intent = new Intent(this, HomeActivity.class);
+    private void showMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
