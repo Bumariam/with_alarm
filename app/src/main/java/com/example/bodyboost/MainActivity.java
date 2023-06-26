@@ -2,6 +2,7 @@ package com.example.bodyboost;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -48,6 +49,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        here
+        CardView findWater = findViewById(R.id.tv_water_card);
+        findWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,WaterActivity.class));
+            }
+        });
+
+        CardView findMedicine = findViewById(R.id.tv_medicine_card);
+        findMedicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,MedicineActivity.class));
+            }
+        });
+
+
+
+        CardView findFood = findViewById(R.id.tv_food_card);
+        findFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,FoodActivity.class));
+            }
+        });
+
+        CardView findSleep = findViewById(R.id.tv_sleep_card);
+        findSleep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SleepActivity.class));
+            }
+        });
+//        here
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference reference = database.getReference("users").child(currentUser.getUid());
         reference.addValueEventListener(new ValueEventListener() {
@@ -58,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
                     tvName.setText("Name: "  + user.name);
                     tvEmail.setText("Email: " + user.email);
                 }
-
             }
 
             @Override
@@ -75,4 +111,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+
 }

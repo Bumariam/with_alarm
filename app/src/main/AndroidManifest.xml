@@ -13,6 +13,18 @@
         android:theme="@style/Theme.BodyBoost"
         tools:targetApi="31">
         <activity
+            android:name=".SleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
