@@ -5,81 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/rootlayout"
-    android:background="@color/white"
-    tools:context=".SleepActivity">
+    android:id="@+id/nightrootlayout"
+    android:background="#070f23">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:textSize="15dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/manropebold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#9296a3"
-        android:textStyle="bold"
 
-        android:id="@+id/timeday"
-        android:text="September 10, 2021"></TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="50dp"
         android:layout_height="wrap_content"
+        android:id="@+id/goodnight"
+        android:textAlignment="center"
         android:fontFamily="@font/manropebold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timeday"
-        android:id="@+id/locday"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="Good morning!"></TextView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Good night"></TextView>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:id="@+id/textclock"
+        android:textSize="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:format24Hour="HH:mm"
+        android:textAlignment="center"
+        android:text="23:00"
+        android:fontFamily="@font/manropebold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goodnight"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:textColor="@color/white"></TextClock>
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:id="@+id/sunimageview"
+        android:layout_marginTop="50dp"
+        android:id="@+id/moonimageview"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:layout_gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/locday"
+        app:layout_constraintTop_toTopOf="@id/textclock"
         android:layout_marginBottom="200dp"
-        android:src="@drawable/sun"></ImageView>
-
-
-
+        android:src="@drawable/moon"></ImageView>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:id="@+id/slideupsun"
+        android:id="@+id/slideupmoon"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="300dp"
-        app:layout_constraintStart_toStartOf="@id/sunimageview"
-        app:layout_constraintTop_toBottomOf="@id/sunimageview"
-        app:layout_constraintEnd_toEndOf="@id/sunimageview"
+        android:layout_marginTop="250dp"
+        app:layout_constraintStart_toStartOf="@id/moonimageview"
+        app:layout_constraintTop_toBottomOf="@id/moonimageview"
+        app:layout_constraintEnd_toEndOf="@id/moonimageview"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/slideupsun"></ImageView>
-
+        android:src="@drawable/slideupmoon"></ImageView>
 
     <TextView
-        android:id="@+id/detailTitle"
+        android:id="@+id/titlemoon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/slideupsun"
-        app:layout_constraintEnd_toEndOf="@id/slideupsun"
-        app:layout_constraintTop_toTopOf="@id/slideupsun"
-        app:layout_constraintBottom_toBottomOf="@id/slideupsun"
+        app:layout_constraintStart_toStartOf="@id/slideupmoon"
+        app:layout_constraintEnd_toEndOf="@id/slideupmoon"
+        app:layout_constraintTop_toTopOf="@id/slideupmoon"
+        app:layout_constraintBottom_toBottomOf="@id/slideupmoon"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginBottom="100dp"
-        android:text="Swipe up to start tracking"
+        android:text="Swipe up to stop tracking"
 
 
         android:fontFamily="@font/manropebold"
@@ -90,15 +89,13 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:layout_constraintStart_toStartOf="@id/slideupsun"
-        app:layout_constraintEnd_toEndOf="@id/slideupsun"
-        app:layout_constraintTop_toTopOf="@id/slideupsun"
-        app:layout_constraintBottom_toTopOf="@id/detailTitle"
+        app:layout_constraintStart_toStartOf="@id/slideupmoon"
+        app:layout_constraintEnd_toEndOf="@id/slideupmoon"
+        app:layout_constraintTop_toTopOf="@id/slideupmoon"
+        app:layout_constraintBottom_toTopOf="@id/titlemoon"
         android:adjustViewBounds="true"
         android:src="@drawable/arrowup"
         app:tint="@color/white"></ImageView>
-
-
 
 
 

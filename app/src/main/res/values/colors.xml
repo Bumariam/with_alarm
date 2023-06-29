@@ -12,4 +12,11 @@
     <color name="grey_light">#F0F0F0</color>
     <color name="primary_color2">#435CAE</color>
     <color name="prym_1">#808DB6</color>
+
+
+<!--    reminder-->
+
+    <color name="cardwhite">#FFFFFF</color>
+    <color name="lightblack">#7C7878</color>
+    <color name="lightblue">#6491B5</color>
 </resources>

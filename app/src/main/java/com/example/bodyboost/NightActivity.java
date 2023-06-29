@@ -1,41 +1,30 @@
 package com.example.bodyboost;
 
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+public class NightActivity extends AppCompatActivity {
 
-public class SleepActivity extends AppCompatActivity {
-    private ConstraintLayout rootlayout;
+    private ConstraintLayout nightrootlayout;
     private SwipeListener swipeListener;
-    private TextView timeday;
-    SharedPreferences tracking;
-    SharedPreferences.Editor ed;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sleep);
-
-        rootlayout = findViewById(R.id.rootlayout);
-        timeday = findViewById(R.id.timeday);
-        Date currentdate = new Date();
-        String stringDate = DateFormat.getDateInstance() .format(currentdate);
-        timeday.setText(stringDate);
-        swipeListener = new SwipeListener(rootlayout);
-
+        setContentView(R.layout.activity_nightactivity);
+        nightrootlayout = findViewById(R.id.nightrootlayout);
+        new Handler().postDelayed(() -> {
+            swipeListener = new SwipeListener(nightrootlayout);
+        }, 500);
     }
 
     private class SwipeListener implements View.OnTouchListener {
@@ -54,23 +43,20 @@ public class SleepActivity extends AppCompatActivity {
                 @Override
                 public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 
+                    float xDiff = e2.getX() - e1.getX();
                     float yDiff = e2.getY() - e1.getY();
                     try {
+                        //if (Math.abs(xDiff) > Math.abs(yDiff)) {
+                        //When x greater than y
+                        //Check condition
                         if (Math.abs(yDiff) > threhold && Math.abs(velocityY) > velocity_threhold)
                         {
-                            if (yDiff < 0) {
-                                //Swipe up, store date
-                                SharedPreferences tracking = getSharedPreferences("tracking", MODE_PRIVATE);
-                                ed = tracking.edit();
-                                Date storedate = new Date();
-                                SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd/HH/mm/ss");
+                            if (yDiff > 0) {
+                                Log.d("DUMADUMADUAM" , "swipe down");
+                            } else {
+                                Log.d("DUMADUMADUAM" , "swipe up");
 
-                                ed.putString("counting", formatter.format(storedate));
-                                ed.apply();
-
-
-
-                                Intent intent = new Intent(SleepActivity.this, NightActivity.class);
+                                Intent intent = new Intent(NightActivity.this, StatActivity.class);
                                 startActivity(intent);
                                 overridePendingTransition(R.anim.slideup, R.anim.slidedown);
                             }
@@ -102,4 +88,6 @@ public class SleepActivity extends AppCompatActivity {
             return gestureDetector.onTouchEvent(motionEvent);
         }
     }
+
+
 }
