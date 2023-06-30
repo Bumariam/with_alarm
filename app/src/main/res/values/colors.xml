@@ -19,4 +19,9 @@
     <color name="cardwhite">#FFFFFF</color>
     <color name="lightblack">#7C7878</color>
     <color name="lightblue">#6491B5</color>
+
+
+    <color name="calories">#db4d00</color>
+    <color name="distance">#361E60</color>
+    <color name="steps">#5A72BB</color>
 </resources>

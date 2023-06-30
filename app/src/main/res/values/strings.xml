@@ -38,4 +38,20 @@
 
     <string name="home_title">Hello!</string>
     <string name="home_sub_title">Welcom to home</string>
+
+    <string name="water_prof">Water</string>
+    <string name="pills_prof">Pills</string>
+    <string name="pills_profile">pills</string>
+    <string name="food_prof">Food</string>
+    <string name="kcal_prof">kcal</string>
+    <string name="count_kcal">0</string>
+    <string name="sleep_prof">Sleep</string>
+    <string name="count_sleep">0</string>
+    <string name="hours_prof">hours</string>
+    <string name="ml_prof">ml</string>
+    <string name="count_water">0</string>
+    <string name="count_pills">0</string>
+
+
+
 </resources>
