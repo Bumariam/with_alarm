@@ -4,8 +4,8 @@
     package="com.example.bodyboost">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,42 +16,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyBoost"
         tools:targetApi="31">
-
         <activity
-            android:name="com.example.bodyboost.StatActivity"
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StatActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.bodyboost.NightActivity"
+            android:name=".NightActivity"
             android:exported="true" />
-
-        <activity android:name="com.example.bodyboost.ReminderActivity" />
-
+        <activity android:name=".ReminderActivity" />
         <activity
-            android:name="com.example.bodyboost.ProfileActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.FitActivity"
+            android:name=".FitActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.SleepActivity"
+            android:name=".SleepActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.FoodActivity"
+            android:name=".FoodActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.MedicineActivity"
+            android:name=".MedicineActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.WaterActivity"
+            android:name=".WaterActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.bodyboost.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
