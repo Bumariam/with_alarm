@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5"
     android:orientation="vertical"
-    tools:context=".FitActivity">
+    tools:context="com.example.bodyboost.FitActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
@@ -249,7 +249,7 @@
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/exersice_1"
+                            android:src="@drawable/totoro_obruch"
 
 
                             />
@@ -381,12 +381,19 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/food"/>
+                            android:src="@drawable/food"
+
+                            />
 
 
 
 
-                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
 
                     <LinearLayout
                         android:layout_width="wrap_content"
