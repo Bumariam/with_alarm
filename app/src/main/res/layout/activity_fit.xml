@@ -152,6 +152,7 @@
 
 
                 <Button
+                    android:id="@+id/startfit1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
@@ -282,6 +283,7 @@
 
 
                 <Button
+                    android:id="@+id/startfit2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"

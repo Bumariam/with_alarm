@@ -5,20 +5,105 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class FitActivity extends AppCompatActivity {
+
+
+    Button button1,button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fit);
         setupMenuNavigation();
+
+
+        Toolbar toolbar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+
+
+
+
+
+
+        button1 = findViewById(R.id.startfit1);
+        button2 = findViewById(R.id.startfit2);
+
+
+
+
+
+
+
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FitActivity.this, SecondActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FitActivity.this, SecondActivity2.class);
+                startActivity(intent);
+
+
+            }
+        });
+
     }
+
+
+
+
+
+
+
+
+
+
+
+    public void beforeage18(View view) {
+
+        Intent intent = new Intent(FitActivity.this, SecondActivity.class);
+        startActivity(intent);
+    }
+
+    public void Afterage18(View view) {
+
+        Intent intent = new Intent(FitActivity.this, SecondActivity2.class);
+        startActivity(intent);
+    }
+
+    public void food(View view) {
+
+        Intent intent = new Intent(FitActivity.this, FoodActivity2.class);
+        startActivity(intent);
+
+
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -52,12 +137,5 @@ public class FitActivity extends AppCompatActivity {
         });
     }
 
-    public void beforeage18(View view) {
-    }
 
-    public void Afterage18(View view) {
-    }
-
-    public void food(View view) {
-    }
 }
