@@ -49,6 +49,7 @@ public class SecondActivity extends AppCompatActivity {
                 int value = i+1;
                 Log.i("FIRST", String.valueOf(value));
                 Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                intent.putExtra("value",String.valueOf(value));
                 startActivity(intent);
             }
         }
