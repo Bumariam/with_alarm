@@ -61,6 +61,15 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".SettingsActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

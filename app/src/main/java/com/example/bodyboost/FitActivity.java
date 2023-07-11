@@ -26,8 +26,6 @@ public class FitActivity extends AppCompatActivity {
         setupMenuNavigation();
 
 
-        Toolbar toolbar = findViewById(R.id.toolBar);
-        setSupportActionBar(toolbar);
 
 
 

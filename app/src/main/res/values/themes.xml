@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BodyBoost" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.BodyBoost" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryVariant">@color/primary_color</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -13,6 +13,19 @@
         <item name="android:forceDarkAllowed" tools:targetApi="Q"> false</item>
         <!-- Customize your theme here. -->
     </style>
+
+<!--    <style name="Theme.CalorieCounter" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!--        &lt;!&ndash; Top bar & buttons &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/Charcoal</item>-->
+<!--        &lt;!&ndash; Progressbar color &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/BurntSienna</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>-->
+
+<!--        <item name="android:colorBackground">@color/Gunmetal</item>-->
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+<!--        <item name="android:textCursorDrawable">@drawable/text_cursor</item>-->
+<!--    </style>-->
 
     <style name="Theme.BodyBoost" parent="Base.Theme.BodyBoost" />
 
