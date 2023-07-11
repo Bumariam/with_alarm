@@ -29,7 +29,7 @@
                     android:id="@+id/productNameInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/BlackCoral"
+                    android:backgroundTint="@color/prym_1"
                     android:hint="Product name"
                     android:inputType="textShortMessage"
                     android:singleLine="true" />
@@ -47,7 +47,7 @@
                     android:id="@+id/productAmountInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/BlackCoral"
+                    android:backgroundTint="@color/prym_1"
                     android:hint="Product amount"
                     android:inputType="numberSigned"
                     android:singleLine="true" />
@@ -65,7 +65,7 @@
                     android:id="@+id/productPrefixInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/BlackCoral"
+                    android:backgroundTint="@color/prym_1"
                     android:hint="Amount prefix"
                     android:inputType="textShortMessage"
                     android:singleLine="true" />
@@ -82,7 +82,7 @@
                     android:id="@+id/productCaloriesInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/BlackCoral"
+                    android:backgroundTint="@color/prym_1"
                     android:hint="Calorie amount"
                     android:inputType="number"
                     android:singleLine="true" />

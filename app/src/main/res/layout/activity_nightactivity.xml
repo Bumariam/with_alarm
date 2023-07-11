@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/nightrootlayout"
-    android:background="#070f23">
+    android:background="@color/primary_color">
 
 
 

@@ -8,26 +8,6 @@
     android:orientation="vertical"
     tools:context="com.example.bodyboost.SecondActivity">
 
-
-
-<!--Toolbar ФИТНЕС-->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolBar"
-        android:layout_width="fill_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/steps"
-        android:textAlignment="textEnd"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Fitness"
-        app:titleTextColor="#FFF"
-
-
-
-        />
-    
-    
-    
-    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

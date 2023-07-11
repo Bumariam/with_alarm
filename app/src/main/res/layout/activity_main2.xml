@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@color/primary_color">
 
     <TextView
         android:id="@+id/calorieHeader"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/calories_eaten_today"
+        android:fontFamily="@font/montserrat"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -37,6 +39,7 @@
         android:layout_width="315dp"
         android:layout_height="46dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="32dp"
         android:progressBackgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +63,9 @@
             android:id="@+id/newDailyGoal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/BlackCoral"
+            android:backgroundTint="@color/prym_1"
             android:hint="@string/calories"
+            android:fontFamily="@font/montserratregular"
             android:inputType="number"
             android:max="100"
             android:singleLine="true"
@@ -77,7 +81,8 @@
         android:backgroundTint="@color/ColumbiaBlue"
         android:onClick="addItems"
         android:text="add items"
-        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

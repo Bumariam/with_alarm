@@ -28,7 +28,7 @@ public class StatActivity extends AppCompatActivity {
 
         backtohome = findViewById(R.id.backtohome);
         backtohome.setOnClickListener(view -> {
-            Intent intent = new Intent(StatActivity.this, SleepActivity.class);
+            Intent intent = new Intent(StatActivity.this, MainActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slideup, R.anim.slidedown);
         });
