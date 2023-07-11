@@ -37,7 +37,6 @@
         <activity
             android:name=".NightActivity"
             android:exported="true" />
-        <activity android:name=".ReminderActivity" />
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
