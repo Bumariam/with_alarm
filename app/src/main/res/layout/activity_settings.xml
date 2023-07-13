@@ -5,34 +5,32 @@
     android:id="@+id/settingsLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity"
-    android:background="@color/primary_color">
+    android:background="@color/white"
+    tools:context=".SettingsActivity">
 
     <Button
         android:id="@+id/deleteDataButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        style="@style/ButtonGreen"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
         android:backgroundTint="@color/ColumbiaBlue"
         android:onClick="deleteAllQuestion"
-        android:fontFamily="@font/montserrat"
         android:text="@string/delete_all_data"
-        android:textColor="@color/primary_color"
         app:layout_constraintBottom_toTopOf="@+id/changeHeader"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
         android:id="@+id/changeHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
+        android:layout_width="319dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserratregular"
         android:text="@string/change_daily_calorie_count"
-        android:textColor="?android:textColorPrimary"
-        android:textSize="24sp"
-        android:fontFamily="@font/montserrat"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/newDailyInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,11 +42,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="100dp"
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/saveGoalButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -61,23 +60,33 @@
             android:inputType="number"
             android:max="100"
             android:singleLine="true"
-            android:textColor="?android:textColorPrimary"
+            android:textColor="@color/cardwhite"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/saveGoalButton"
+        style="@style/ButtonGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:backgroundTint="@color/ColumbiaBlue"
         android:onClick="applyChanges"
         android:text="@string/apply"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/ColumbiaBlue" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="289dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toTopOf="@+id/changeHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteDataButton"
+        app:srcCompat="@drawable/salad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
