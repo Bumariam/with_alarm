@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Напоминание о питье воды"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton30min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Каждые 30 минут" />
+
+        <RadioButton
+            android:id="@+id/radioButton1hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Каждый час" />
+
+        <RadioButton
+            android:id="@+id/radioButton2hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Каждые 2 часа" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Установить напоминание" />
+
+</LinearLayout>

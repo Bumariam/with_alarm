@@ -53,14 +53,7 @@
     <string name="count_pills">0</string>
 
 
-
-
-
-
-
-
-
-<!--FITNESS don/t touch-->
+    <!--FITNESS don/t touch-->
     <string name="pose1">    Step 1:- Start in the push-up position with your arms completely straight and directly beneath your shoulders.\n\n
                              Step 2:- Your body should form a straight line from your shoulders to your ankles. \n\n
                              Step 3:- Squeeze your abs, lift one foot off the floor and bring your knee up towards your chest while keeping your body in as straight of a line as possible. \n\n
@@ -173,7 +166,6 @@
     </string-array>
 
 
-
     <string name="settings">Settings</string>
     <string name="clear_calories">Clear calories</string>
     <string name="calories">Calories</string>
@@ -183,6 +175,16 @@
     <string name="daily_calories">Daily calories</string>
     <string name="view_progress">View progress</string>
     <string name="delete_all_data">Delete all data</string>
+    <string name="default_notification_channel_id">channel_id</string>
+
+
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="start_alarm">Start Alarm</string>
+    <string name="edit_text_hint">Input your Alarm time</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="label">Select your Alarm input type from below:</string>
 
 
 </resources>
